@@ -1,0 +1,12 @@
+#moving zeros to last of array
+
+def move_zeros(arr):
+    N = 0
+    for i in range(len(arr)):
+        if arr[i] != 0:
+            arr [N], arr[i] = arr [i], arr [N] 
+            N += 1
+    return arr
+arr = [8,4,0,2,1,0,2,0]
+result = move_zeros(arr)
+print ("Array after moving zeroes:", result)
